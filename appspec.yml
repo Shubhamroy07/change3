@@ -6,8 +6,8 @@ files:
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
-      timeout: 500
-      runas: root
+      timeout: 300
+      runas: codedeployuser
     - location: scripts/start_server
       timeout: 500
       runas: root
